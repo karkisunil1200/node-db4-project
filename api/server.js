@@ -9,6 +9,6 @@ server.get('/', (req, res) => {
   res.send(`<h2> Welcome to your homepage!!</h2>`);
 });
 
-server.get('/api/recipes', recipesRouter);
+server.use('/api/recipes', recipesRouter);
 
 module.exports = server;
